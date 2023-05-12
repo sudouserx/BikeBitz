@@ -1,0 +1,24 @@
+node_modules
+.env
+coverage
+coverage.json
+typechain
+typechain-types
+metadata-generator.js
+
+# Hardhat files
+cache
+artifacts
+
+#Pinata files
+Pinnies
+metadata
+
+# documents
+deploymentAddress.txt
+keys.txt
+todo.txt
+
+
+
+

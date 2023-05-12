@@ -1,0 +1,55 @@
+Arguments: 
+  /usr/bin/node /usr/bin/yarn run deploy
+
+PATH: 
+  /usr/bin:/usr/local/bin::/usr/local/go/bin:/home/ebrahim/.protostar/dist/protostar:/home/ebrahim/.starklings/dist/starklings
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  18.14.2
+
+Platform: 
+  linux x64
+
+Trace: 
+  SyntaxError: /home/ebrahim/Desktop/bikeSharingMVP/backend/package.json: Unexpected token } in JSON at position 419
+      at JSON.parse (<anonymous>)
+      at /usr/lib/node_modules/yarn/lib/cli.js:1629:59
+      at Generator.next (<anonymous>)
+      at step (/usr/lib/node_modules/yarn/lib/cli.js:310:30)
+      at /usr/lib/node_modules/yarn/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "backend",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "deploy": "npx hardhat run scripts/deploy.js",
+      "mint"  :"npx hardhat run scripts/mint.js",
+      "rent"  :"npx hardhat run scripts/rent.js",
+      "tokenUri"  :"npx hardhat run scripts/tokenUri.js",
+      "userOf"  :"npx hardhat run scripts/userOf.js",
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+      "@nomicfoundation/hardhat-toolbox": "^2.0.2",
+      "hardhat": "^2.13.0"
+    },
+    "dependencies": {
+      "@openzeppelin/contracts": "^4.8.2",
+      "dotenv": "^16.0.3"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
